@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Forms</title>
+    <link rel="stylesheet" href="../CSS/mainStyle.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="./homePage.html">About Us</a> 
+            <a href="./Rooms.html">Rooms</a> 
+            <a href="./bookingForm.html">Bookings</a> 
+            <a href="./facilities.html">Facilities</a>
+            <a href="./enquiryForm.html">Enquiry</a>
+    </header>
+    <section>
+        <h2 >Enquiry Form</h2>
+        <p>
+            Let us help you find yourself a comfortable and cozy room or you can write to us regarding any enquiry!
+        </p>
+    </section>
+    <section>
+        <form>
+            <p><input type="text" placeholder="Enter the Name" id="empName" /></p>
+            <p><input type="email" placeholder="Enter the Email" id="empEmail" /></p>
+            <p><input type="date" placeholder="Enter the Date of Birth" id="empDOB" /></p>
+            <p>
+                <datalist id="lstStates">
+                    <option>Arunachal Pradesh</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Assam</option>
+                    <option>Bihar</option>
+                    <option>Chandigarh</option>
+                    <option>Chhattisgarh</option>
+                    <option>Dadra and Nagar Haveli and Daman and Diu</option>
+                    <option>Delhi </option>
+                    <option>Goa</option>
+                    <option>Gujarat</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jammu and Kashmir</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Lakshadweep</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Maharashtra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option> 
+                    <option>Puducherry</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+                    <option>Telangana</option>
+                    <option>Tripura</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Uttarakhand</option>
+                    <option>West Bengal</option>
+                </datalist>
+                <input type="text" placeholder="Select the State" list="lstStates" />
+
+            <p><input type="tel" placeholder="Enter the Contact No" id="empPhone" /></p>
+            <p>
+                Your other requirements in your Hotel:</p>
+                <input type="checkbox">Swimming Pool</p>
+                <input type="checkbox">Gym</p>
+                <input type="checkbox">Restaurant</p>
+                <input type="checkbox">Coffee Shop</p>
+                <input type="checkbox">SPA</p>
+                <input type="checkbox">AC</p>
+                <input type="checkbox">Non Veg</p>
+                <input type="checkbox">Veg</p>
+                <input type="checkbox">Pick-up from Airport</p>
+            </p>
+            <button type="button">Register</button>
+        </form>
+    </section>
+    <footer>
+        <hr />
+        &copy;<i>Copyrights Taj.Inc-2020</i>
+    </footer>
+</body>
+</html>

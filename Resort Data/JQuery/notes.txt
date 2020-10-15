@@ -1,0 +1,3 @@
+it is a library written in js to create faster and feature rich user interfaces using a single .js file. it has many shortcut api's that would do more work with less code. things that are hard to implement in classic js could be done here with minimal or less code. 
+$ is the shortcut of jquery 
+document . ready will make the jquery to wait till the document is completely loaded into the browser

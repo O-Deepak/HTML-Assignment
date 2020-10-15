@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>JQuery Stuffffff</title>
+ <script>
+     function init(){
+         $("a:gt(0)").click(function(){
+             $(this).parent().fadeout(3000);
+         })
+         $("a:first").click(function(){
+             $("div").fadeIn(3000);
+         })
+     }
+     $(document).ready(init);
+ </script>
+ <style>
+     div
+     {
+    width: 40%;
+    height: 350px;
+    border: 2px dashed lightgreen;
+    display: inline-block;
+    margin: 5px;
+     }
+ </style>
+</head>
+<body>
+  <section>
+ <div>
+ <h2>Division 1</h2> 
+ </div>
+ 
+ <div>
+ <h2>Division 2</h2> 
+ </div>
+ <div>
+ <h2>Division 3</h2> 
+ </div>
+ <div> 
+ <h2>Division 4</h2> 
+</section>
+ </div>
+
+</body>
+</html>

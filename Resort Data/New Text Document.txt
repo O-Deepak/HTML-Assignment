@@ -1,0 +1,66 @@
+for special characters to be replaced in html docs like copyright, lesser than , greater than tags, we use something called as entities. Entities will be prefixxed 
+with a & and end with ; 
+Popular entities are 
+&nbsp; (whitespace)
+&copy; (Copyrights)
+&gt; and &lt for less than and greater than.
+NOTE:
+<divs> and <p> and their derivatives will occupy the complete linear content from left to right
+
+ASSIGNMENT TO EXPLORE:
+
+other than formatting tags we have something called quotation tag.
+
+===============================================================================
+
+<pre></pre> this tag will print the content as it is being placed in the browser including the white spacing which is usually ignored by the html parser.
+if u want to use tags inside pre use, &lt; Tags foes here &gt;
+
+./ will present content from tht page only
+../ will move up and display the content from the other folders as well.
+<img src="../content/bangalore.jgp">
+
+CRUD: create , read, update, write
+
+* is a wild character that is applicable to all the elements of the document unless mentioned specifically.
+# is used to identify an element based on its unique id
+=================================================================================
+
+javascript is a scripting language used to create dynamic content in html files
+ECMA suggests javascript. ECMA (European computer manufacturer association)
+arrays in javascript are dynamic in nature. u could add elements to the array without altering the current status.
+unshift - adds the new element to the start of the array
+to remove the array elementwe use pop and shift. 
+pop removes the last element and shift removes the front items.
+
+
+in JS alone length func will enable us to increase or decrease the size. it is not read only. length is writable.
+
+
+innerText
+vs
+value
+vs
+innerHTML
+
+===================================================================================
+
+function keyword is used to create a class in javascript
+there is no private concept in JS
+all members are by default public only. 
+
+# in a href means tht the link is internal and does not go anywhere else
+
+ctrl +shift + d = copy
+
+$("div:eq(1)>p") it means 2nd div
+we are telling to display the content thro .text(display);
+
+focus is to highlight when we are on top iof it
+focusout is to bring another state preferrably the initial state 
+
+======================================================================================
+
+MEAN Stack = mongoDB , Express , Angular, NodeJS as a stack for rich internet based contents
+REPL = read, evaluate, print, loop to perform basic operations from command prompt or from the terminal. it is basically a program created to take inputs from the user evaluarte the statement and print it and re-run it like a loop . hence the name REPL. 
+since node7.0 we have a tab favcility which will provide auto completion. 

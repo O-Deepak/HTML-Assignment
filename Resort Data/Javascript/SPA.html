@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Employee Monitoring System</title>
+ <script src="../empData.js"></script>
+ <script src="./common.js"></script>
+ <script>
+ let mgr = new empManager();
+ function init()
+ {
+     $hide("div1");
+     $hide("div2");
+     $hide("div3");
+
+     mgr.addEmployee(new employee(123, "Deepak", "Chennai"))
+     mgr.addEmployee(new employee(124, "Deepa", "Chennai"))
+     mgr.addEmployee(new employee(125, "Deep", "Chennai"))
+     mgr.addEmployee(new employee(126, "Dee", "Chennai"))
+
+ }
+ function onAddClick()
+ {
+     $hide("div1");
+     $hide("div2");
+     $show("div3");
+ }
+ function onAddEmployee()
+ {
+     let id = $("newId").value;
+     let name = $("newName").value;
+     let address = $("newAddress").value;
+     let emp = new employee(id, name, address);
+     mgr.addEmployee(emp);
+     $("newId").value=""
+     $("newName").value=""
+     $("newAddress").value=""
+     alert("Employee Added Successfully");
+
+ }
+ function fillRecords(){
+     $hide("div1");
+     $hide("div2");
+     $show("div3");
+ /*let empData = mgr.getAll();
+ let tbl = document.getElementById("tblRecords");
+ for (let index = 0; index < empData.length; index++) {
+ const element = empData[index];*/
+ let heading = `<tr><th>Emp ID </th><th>Emp name</th><th>Emp Address</th><th>Options</th>`;
+    $("tblRecords").innerHTML = heading;
+    $show("div1") ;
+    let data = mgr.getAll();
+    data.forEach(emp => { let row = `<tr><td> ${emp.empID}</td><td>${emp.empName}</td><td>${emp.empAddress}</td><td>Edit</td>`;
+        $('tblRecords').innerHTML += row;
+        
+    });
+ }
+ 
+ </script>
+</head>
+<body onload="init()">
+ <header>
+ <nav>
+ <a href="#" onclick="fillRecords()">View All</a>
+ <a href="#" onclick="">New Employee</a>
+ <a href="#">About Us</a>
+ </nav>
+ </header>
+ <section>
+ <div1>
+ <h2>List of Employees with Us!!!!</h2>
+ <table id="tblRecords" border="1">
+ 
+ </table>
+ </div1>
+ <div2>
+ <h2>Edit the Details of the Employee</h2>
+ <p>Employee ID: <span id="empId"></span> </p>
+ <p>Employee Name: <input type="text" id="empName"></p> 
+ <p>Employee Address: <input type="text" id="empAddress"></p>
+ <p><button>Update Record</button></p> 
+ </div2>
+ <div3>
+ <h2>Add the Details of the Employee</h2>
+ <p>Employee ID: <input type="number" id="newId"> </p>
+ <p>Employee Name: <input type="text" id="newName"></p>
+ <p>Employee Address: <input type="text" id="newAddress"></p>
+ <p><button onclick="onAddEmployee()">Add Employee</button></p>
+ </div3> 
+ </section>
+</body>
+</html>

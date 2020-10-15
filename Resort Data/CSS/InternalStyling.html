@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Styling</title>
+    <style>
+        body{
+            background-color: cornsilk;
+            color: chocolate;
+        }
+        h1{
+            text-align: center;
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 30px;
+        }
+        nav{
+            background-color: blueviolet;
+            padding: 25px;
+            margin: 20px;
+            text-align: center;
+        }
+        a{
+            width: 120px;
+            height: 50px;
+            background-color: bisque;
+            color: blueviolet;
+            padding: 10px;
+            margin: 20px;
+            font-size:24pt;
+        }
+
+        a:hover{
+            background-color: gold;
+        }
+
+        div{
+          width: 40%; /*sets the width of the div, works only if display is inline*/
+          height: 500px;/*sets the height of the div */
+          border: 2px dashed lightgreen;
+          margin-left: 50px; /*Sets a gap of 50px on the left side of the Div*/
+          margin-bottom: 15px;/*Sets a gap of 15px on the bottom of the Div*/
+          display : inline-block;/*Makes the div inline, so based on width, the next element will be in the same line with the div*/  
+        }
+        section{
+            text-align: center;
+        }
+        footer{
+            bottom: 0px;/*sets the content to the bottom of the window*/
+            /*Makes the content to be at the bottom of the page irrespective of the content*/
+            text-align: center;
+            position: fixed;/*excludes the flow of the document and will make the element visible all the time*/
+            width: 100%;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Room Bookings</h1>
+    <header>
+        <nav>
+            <a href="./Ex01.html">About Us</a> 
+            <a href="./Ex02.html">Rooms</a> 
+            <a href="./Ex03.html">Bookings</a> 
+            <a href="./Ex04.html">Locations</a>
+            <a href="./Ex05.html">Enquiry</a>
+            <a href="./Ex06.html">Contact Us</a>
+        </nav>
+    </header> 
+    <section>
+       <h2>
+           Checkout these cool rooms!!!!
+       </h2> 
+    </section>
+    <section>
+    <div>
+       <h2>Room 1</h2> 
+      <img src="../Content/Reception.jpg" alt="Lobby" width="500" height="300px">"
+      <h3 style="text-align: center;">Lobby</h3>
+      <h3 style="text-align: center;">Air-Conditioned</h3>
+      <h3 style="text-align: center;">Valet Parking</h3>
+    </div>
+    
+    <div>
+       <h2>Room 2</h2> 
+       <img src="../Content/Room.jpg" alt="Rooms" width="500" height="300px">"
+       <h3 style="text-align: center;">Lobby</h3>
+      <h3 style="text-align: center;">Air-Conditioned</h3>
+      <h3 style="text-align: center;">Valet Parking</h3>
+    </div>
+    <div>
+       <h2>room 3</h2> 
+        
+    </div>
+    <div>
+       <h2>Room 4</h2> 
+    </div>
+    </section>
+    <footer>
+        <hr />
+        &copy;Copyrights Taj.Inc-2020
+    </footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Basics</title>
+    <script src="./Lib/jquery.js"></script>
+    
+</head>
+<body>
+    <div style="width: 30%; height: 300px; background-color: blue" id="div1">
+
+    </div >
+    <div style="width: 30%; height: 300px; background-color: green">
+
+    </div>
+    <div style="width: 30%; height: 300px; background-color: yellow">
+
+    </div>
+    <div style="width: 30%; height: 300px; background-color: red">
+
+    </div>
+    <script>
+        jQuery("div").click(function()
+        {
+            jQuery(this).hide(2000);
+         })
+         $("#div1").mouseover(function()
+         {
+             $(this).css("background-color", "yellow");
+         })
+        </script>
+</body>
+</html>
